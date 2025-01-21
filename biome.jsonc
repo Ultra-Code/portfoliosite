@@ -1,13 +1,12 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "vcs": {
-    "enabled": false,
+    "enabled": true,
     "clientKind": "git",
     "useIgnoreFile": true
   },
   "files": {
     "ignoreUnknown": false,
-    "include": ["app/"],
     "ignore": []
   },
   "formatter": {
@@ -24,10 +23,14 @@
       "suspicious": {
         "noReactSpecificProps": "off"
       },
+      "style": { "noDefaultExport": "off" },
+      "correctness": { "useImportExtensions": "off" },
       "nursery": {
         "all": true,
         "useSortedClasses": "off",
-        "useExplicitType": "off"
+        "useExplicitType": "off",
+        "useImportRestrictions": "off",
+        "useComponentExportOnlyModules": "off"
       }
     }
   },

@@ -7,7 +7,7 @@ import {
   isRouteErrorResponse,
 } from "react-router";
 
-import type { Route } from "./+types/root.ts";
+import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 
 export const links: Route.LinksFunction = () => [
@@ -42,7 +42,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function App() {
+export default function App() {
   return <Outlet />;
 }
 
