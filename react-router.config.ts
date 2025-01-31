@@ -4,4 +4,8 @@ export default {
   // Config options...
   // Server-side render by default, to enable SPA mode set this to `false`
   ssr: true,
+  // prerender sites for SSG
+  prerender: () => {
+    return ["about"];
+  },
 } satisfies Config;
